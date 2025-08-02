@@ -1,3 +1,7 @@
+# Copyright 2025 Oleksii Larionov
+# Licensed under the Apache License, Version 2.0
+# See LICENSE file for more information.
+
 import numpy as np
 import os
 import logging
