@@ -1,0 +1,51 @@
+# Python-specific ignores
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.pyc
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# Logs
+logs/
+*.log
+
+# Data files
+data/FMA/
+data/GTZAN/*
+
+!data/GTZAN/blues/
+!data/GTZAN/blues/**
+
+# Results
+result/train_results/*
+result/test_results/*
+
+!result/train_results/best_model/
+!result/test_results/.gitkeep
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS-specific ignores
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE-specific ignores
+.vscode/
+.idea/
+*.iml
+
+# Compiled files
+*.o
+*.obj
+*.exe
+*.dll
+*.out
+*.class
