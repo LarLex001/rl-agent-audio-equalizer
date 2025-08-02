@@ -36,7 +36,7 @@ This project implements an intelligent agent based on the **Deep Q-Learning** al
 ---
 #### 📊 [RL-Agent component diagram](https://www.canva.com/design/DAGu23T1KlA/-7RK4ZtioLauQDxSfGLJkg/edit?utm_content=DAGu23T1KlA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-![RL-Agent Components](../assets/figures/rl-agent_components.png)
+![RL-Agent Components](assets/figures/rl-agent_components.png)
 
 ---
 ### 🛠️ Technologies used
@@ -59,7 +59,7 @@ This project implements an intelligent agent based on the **Deep Q-Learning** al
 1. **GTZAN dataset**  
     Used as a source of reference audio tracks (10 genres × 100 files).
 
-2. **Generation of raw versions ([distortion-audio](../scripts/distortion_audio.py))**  
+2. **Generation of raw versions ([distortion-audio](scripts/distortion_audio.py))**  
     Equaliser filters with randomly generated parameters and additional ‘air’ are applied to each reference track, allowing for an unlimited number of unique `‘raw ↔ reference’` pairs.  
 3. **Feature extraction:**
    - **Energy features**
@@ -91,7 +91,7 @@ This project implements an intelligent agent based on the **Deep Q-Learning** al
 
 #### [Agent training episode diagram](https://www.canva.com/design/DAGu3G_xvI8/APojeV2-VUmIeeke3-_tkw/edit?utm_content=DAGu3G_xvI8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
-![Agent Training Cycle](../assets/figures/agent_training_cycle.png)
+![Agent Training Cycle](assets/figures/agent_training_cycle.png)
 
 ---
 ### 🎧 Examples of work
@@ -100,23 +100,23 @@ This project implements an intelligent agent based on the **Deep Q-Learning** al
 
 _Example of spectrograms of raw, processed and reference tracks_
 
-![Spectrograms](../assets/eq_processing/spectrograms_ex.png)
+![Spectrograms](assets/eq_processing/spectrograms_ex.png)
 
 ---
 #### 📈 EQ curves
 
 _Equaliser frequency response graph with optimised filter parameters_
 
-![EQ Curves](../assets/eq_processing/eq_curve_ex.png)
+![EQ Curves](assets/eq_processing/eq_curve_ex.png)
 
 ---
 #### 🔊 Audio demo
 
 Three audio clips from a single training episode:
 
-- [Raw audio](../assets/audio/raw_audio.wav) – original, unprocessed signal  
-- [Processed](../assets/audio/processed_audio.wav) – the result of the agent's action after selecting EQ parameters
-- [Reference](../assets/audio/ref_audio.wav) – the target example that the agent strives for 
+- [Raw audio](assets/audio/raw_audio.wav) – original, unprocessed signal  
+- [Processed](assets/audio/processed_audio.wav) – the result of the agent's action after selecting EQ parameters
+- [Reference](assets/audio/ref_audio.wav) – the target example that the agent strives for 
 
 ---
 ### 📊 Results
@@ -126,35 +126,35 @@ Three audio clips from a single training episode:
 The graph shows a gradual increase in average rewards, indicating successful training.  
 Declines are associated with genre differences in tracks when the agent's strategy is not generalised to new audio.
 
-![Rewards](../assets/plots/agent_reward.png)
+![Rewards](assets/plots/agent_reward.png)
 
 ---
 #### Loss graph
 
 The graph shows the loss values of the neural network for predicting the Q-values of each of the equaliser parameters.
 
-![Loss NN](../assets/plots/nn_loss.png)
+![Loss NN](assets/plots/nn_loss.png)
 
 ---
 #### Epsilon schedule
 
 Shows how ε gradually decreases during agent training to balance exploration and exploitation.
 
-![Epsilon decay](../assets/plots/epsilon_decay.png)
+![Epsilon decay](assets/plots/epsilon_decay.png)
 
 ---
 #### Award schedule by genre
 
 Average award schedule by genre during training
 
-![Reward by genre](../assets/plots/genre_rewards.png)
+![Reward by genre](assets/plots/genre_rewards.png)
 
 ---
 ### 📦 Output data
 
 - **Generated dataset**  
-CSV with feature vectors and optimal EQ parameters for each track ([example dataset](../assets/eq_prediction_dataset_ex.csv))
-- **Trained agent models ([models](../result/train_results/best_model/))**  
+CSV with feature vectors and optimal EQ parameters for each track ([example dataset](assets/eq_prediction_dataset_ex.csv))
+- **Trained agent models ([models](result/train_results/best_model/))**  
 Saved trained DQN models for predicting Q-values for each of the 12 equaliser parameters
 
 ## 🛠️ Future improvements
@@ -222,5 +222,8 @@ python main.py
 
 ## 📝 License
 
-This project is licensed under the terms of the [Apache License 2.0](../LICENSE).  
-You are free to use, modify and distribute this code in accordance with the terms of the licence.
+This project is licensed under the Apache License 2.0.
+You are free to use, modify, and distribute this software under the terms of the license.
+
+- See the full license text in [LICENSE](LICENSE).
+- Attribution and additional copyright information are provided in [NOTICE](NOTICE).
