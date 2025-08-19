@@ -114,7 +114,7 @@ def apply_equalizer(audio, sr, params, plot_response=False):
     
     processed_audio = audio.copy()
 
-    # application of filters
+    # Application of filters
     processed_audio = shelf_filter(
         processed_audio, sr,
         params['low_shelf_freq'], 

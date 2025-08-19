@@ -89,6 +89,7 @@ This project implements an intelligent agent based on the **Deep Q-Learning** al
     where $R(s, a)$ is the agent's reward for action $a$ in state $s$;  
     $∆$ is improvement value of the metric.
 
+---
 #### [Agent training episode diagram](https://www.canva.com/design/DAGu3G_xvI8/APojeV2-VUmIeeke3-_tkw/edit?utm_content=DAGu3G_xvI8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 ![Agent Training Cycle](assets/figures/agent_training_cycle.png)
@@ -145,7 +146,7 @@ Shows how ε gradually decreases during agent training to balance exploration an
 ---
 #### Award schedule by genre
 
-Average award schedule by genre during training
+Average award schedule by genre during training.
 
 ![Reward by genre](assets/plots/genre_rewards.png)
 
@@ -205,7 +206,7 @@ rl-agent-audio-equalizer/
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/rl-agent-audio-equalizer.git
+git clone https://github.com/LarLex001/rl-agent-audio-equalizer.git
 ```
 
 2. Install dependencies:
